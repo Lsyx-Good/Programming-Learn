@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      td,
+      th {
+        border: 1px solid grey;
+        /* 压缩边框 */
+        border-collapse: collapse;
+        /* 设定内边距 */
+        padding: 5px;
+      }
+      /* 消除重复 */
+      /* td {
+            border: 1px solid 
+        } */
+        tfoot {
+            /* 左对齐 */
+            text-align: left;
+        }
+    </style>
+  </head>
+  <body>
+    <table>
+        <!-- 表头部分 -->
+      <thead>
+          <tr>
+              <!-- 延伸到占用两格，默认为 1 -->
+              <th colspan="2">Expenses</th>
+          </tr>
+        <!-- 添加表头 -->
+        <tr>
+          <th>Category</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <!-- 表的主体部分 -->
+      <tbody>
+        <tr>
+          <td>marketing</td>
+          <td>$10</td>
+        </tr>
+        <tr>
+          <td>Accounting</td>
+          <td>$200</td>
+        </tr>
+      </tbody>
+      <!-- 添加汇总，默认的字体加黑加粗且居中 -->
+      <tfoot>
+          <tr>
+              <th>Total</th>
+              <th>$300</th>
+          </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

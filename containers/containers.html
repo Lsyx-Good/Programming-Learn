@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 可以直接使用 .product */
+        div.product {
+            background-color: gold;
+            width: 300px;
+        }
+        
+        .highlight {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 分区元素 -->
+    <!-- 不建议直接使用 div{} 给 div 添加样式这样会
+    应用到页面的全部div，这是不明智的 -->
+    <!-- 所以给 div 添加一个定义一个 class -->
+    <!-- div 是一个  Block-level-Element 即 块级元素 -->
+    <!-- 永远占一行 不满一行会进行空格填补 -->
+    <div class="product">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <a href="#">Link</a>
+    </div>    
+    <div class="product">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <a href="#">Link</a>
+    </div> 
+
+    <!-- span inline-Element -->
+    <!-- 常用于给文字增加样式 -->
+    <p><span class="highlight">Lipsum</span>  dolor sit amet consectetur adipisicing elit. Alias, officia?</p>
+</body>
+</html>
