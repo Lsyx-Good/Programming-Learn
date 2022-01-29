@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+            /* 覆盖容器盒子，每一个标签都是一个盒子，这里设置为覆盖，
+            大部分时候使用cover就行 */
+            object-fit: cover;
+        }
+        video {
+            /* 不用设置高度是因为会根据视频高度进行显示 */
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <!-- alt 这个属性是附加的文字说明，最好输入对此图片的描述文字，
+        当图片无法显示使会显示出来，这也朗读时的文字 -->
+      <img src="/images/coffee.jpg" alt="a coffee img">
+      <!-- controls 控制显示控制按钮 autoplay 控制是否自动播放 loop 控制是否循环播放   -->
+      <video src="/video/ocean.mp4" controls autoplay loop></video>
+      <!-- 一个检查工具 caniuse.com -->
+      <audio src=""></audio>
+      <!-- audio 与 video 的属性基本一样 -->
+</body>
+</html>
