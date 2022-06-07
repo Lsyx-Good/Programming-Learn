@@ -3,4 +3,7 @@
 /Rust/demo/.gitignore
 /Rust/demo1/.gitignore
 /Rust/demo1/.git
-
+C sharp/firstCSharp/.vscode
+C sharp/firstCSharp/bin
+C sharp/firstCSharp/obj
+*.exe

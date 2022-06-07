@@ -1,0 +1,34 @@
+### /api/companies GET
+GET http://localhost:8080/api/companies HTTP/1.1
+
+### /api/companies POST, No Auth
+POST http://localhost:8080/api/companies HTTP/1.1
+
+{
+    "id": "004",
+    "name": "Facebook",
+    "nickName": "FB"
+}
+
+### /api/companies POST, admin:123456
+POST http://localhost:8080/api/companies HTTP/1.1
+Authorization: Basic YWRtaW46MTIzNDU2
+
+{
+    "id": "004",
+    "name": "Facebook",
+    "nickName": "FB"
+}
+###
+GET  http://localhost:8080/url#flag HTTP/1.1
+###
+GET  http://localhost:8080/head#flag HTTP/1.1
+
+###
+POST http://localhost:8080/body#dfdsf HTTP/1.1
+
+{
+    "id": "004",
+    "name": "Facebook",
+    "nickName": "FB"
+}
